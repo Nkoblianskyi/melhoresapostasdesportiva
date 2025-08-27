@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Info, AlertTriangle, Trophy } from "lucide-react"
+import { Info, AlertTriangle } from "lucide-react"
 import Image from "next/image"
 
 export function SiteFooter() {
@@ -11,9 +11,8 @@ export function SiteFooter() {
           {/* Logo and description - 3 columns */}
           <div className="md:col-span-3 space-y-4">
             <Link href="/" className="flex items-center gap-2 group">
-              <div className="relative h-10 w-10 bg-white rounded-lg shadow-md overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                <div className="absolute inset-0 bg-green-600 opacity-90"></div>
-                <Trophy className="h-6 w-6 text-white relative z-10 transition-transform duration-300 group-hover:rotate-12" />
+              <div className="relative h-10 w-10 overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+                <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
               </div>
               <div className="flex flex-col">
                 <span className="font-bold text-white transition-colors duration-300 group-hover:text-green-300 leading-none text-sm">
@@ -98,55 +97,55 @@ export function SiteFooter() {
       </div>
 
       {/* Organizações Regulamentares */}
-        <div className="border-t border-slate-600 pt-8 mb-8">
-          <h4 className="text-white font-bold mb-6 text-center text-lg">Organizações</h4>
-          <div className="grid grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
-            <Link
-              href="https://www.sicad.pt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-white hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
-            >
-              <img src="/icad.png" alt="SICAD" className="h-8 md:h-12 w-auto object-contain" />
-            </Link>
-            <Link
-              href="https://www.gamcare.org.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
-            >
-              <img src="/gamecare.svg" alt="GamCare" className="h-8 md:h-12 w-auto object-contain" />
-            </Link>
-            <Link
-              href="https://www.srij.turismodeportugal.pt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
-            >
-              <img
-                src="/srij.svg"
-                alt="SRIJ - Serviço de Regulação e Inspeção de Jogos"
-                className="h-8 md:h-12 w-auto object-contain"
-              />
-            </Link>
-            <Link
-              href="https://www.gambleaware.org"
-              target="_blank"
-              rel="noopener noreferrer"
-              className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
-            >
-              <img src="/gamble.webp" alt="GambleAware" className="h-8 md:h-12 w-auto object-contain" />
-            </Link>
-            <Link
-              href="https://www.jogoresponsavel.pt"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
-            >
-              <img src="/jogo2.png" alt="Jogo Responsável" className="h-8 md:h-12 w-auto object-contain" />
-            </Link>
-          </div>
+      <div className="border-t border-slate-600 pt-8 mb-8">
+        <h4 className="text-white font-bold mb-6 text-center text-lg">Organizações</h4>
+        <div className="grid grid-cols-3 md:grid-cols-5 gap-3 md:gap-4">
+          <Link
+            href="https://www.sicad.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+          >
+            <img src="/icad.png" alt="SICAD" className="h-8 md:h-12 w-auto object-contain" />
+          </Link>
+          <Link
+            href="https://www.gamcare.org.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+          >
+            <img src="/gamecare.svg" alt="GamCare" className="h-8 md:h-12 w-auto object-contain" />
+          </Link>
+          <Link
+            href="https://www.srij.turismodeportugal.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+          >
+            <img
+              src="/srij.svg"
+              alt="SRIJ - Serviço de Regulação e Inspeção de Jogos"
+              className="h-8 md:h-12 w-auto object-contain"
+            />
+          </Link>
+          <Link
+            href="https://www.gambleaware.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className=" hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+          >
+            <img src="/gamble.webp" alt="GambleAware" className="h-8 md:h-12 w-auto object-contain" />
+          </Link>
+          <Link
+            href="https://www.jogoresponsavel.pt"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:bg-slate-700/50 rounded-lg p-2 md:p-4 flex items-center justify-center transition-colors"
+          >
+            <img src="/jogo2.png" alt="Jogo Responsável" className="h-8 md:h-12 w-auto object-contain" />
+          </Link>
         </div>
+      </div>
 
       {/* Middle section with disclaimer */}
       <div className="py-6 border-t border-gray-700">

@@ -1,8 +1,9 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, Trophy, X } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
+import Image from "next/image"
 
 export function SiteHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -32,9 +33,8 @@ export function SiteHeader() {
     >
       <div className="max-w-[1150px] mx-auto flex items-center justify-between h-16 px-4 overflow-hidden">
         <Link href="/" className="flex items-center gap-2 group flex-shrink-0 min-w-0">
-          <div className="relative h-10 w-10 bg-white rounded-lg shadow-md overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
-            <div className="absolute inset-0 bg-red-600 opacity-90"></div>
-            <Trophy className="h-6 w-6 text-white relative z-10 transition-transform duration-300 group-hover:rotate-12" />
+          <div className="relative h-10 w-10 overflow-hidden flex items-center justify-center transition-transform duration-300 group-hover:scale-110 flex-shrink-0">
+            <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
           </div>
           <div className="flex flex-col min-w-0">
             <span className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-green-300 leading-none truncate">
