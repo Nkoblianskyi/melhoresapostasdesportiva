@@ -1,69 +1,79 @@
 export interface BettingSite {
-  reviews: number
-  id: string
+  id: number
   name: string
   logo: string
-  score: number
   bonus: string
-  features: string[]
-  paymentMethods: string[]
-  link: string
+  url: string
+  rating: number
+  stars: number
+  reviews: number
+  badges: string[]
+  isTopRating?: boolean
+  isTopLine?: boolean
+  isPopular?: boolean
+  isTrending?: boolean
 }
 
 export const bettingSites: BettingSite[] = [
   {
-    id: "betibet",
-    name: "BetiBet",
-    logo: "/betibet.png",
-    score: 9.8,
-    bonus: "Bónus de Primeiro Depósito 100%",
-    features: ["Levantamentos Rápidos", "Melhores Odds", "Interface Simples"],
-    paymentMethods: ["Visa/Mastercard", "MB Way", "Transferência Bancária"],
-    link: "https://qualityboost.top/2sLKjNqT",
-    reviews: 5876,
+    id: 3,
+    name: "Luckia",
+    logo: "/luckia.svg",
+    bonus: "Aposta Grátis de Atualmente",
+    url: "https://www.luckia.pt/",
+    rating: 9.9,
+    stars: 5,
+    reviews: 8256,
+    badges: ["EM ALTA"],
+    isTrending: true,
   },
   {
-    id: "winrolla",
-    name: "Winrolla",
-    logo: "/win-rolla.webp",
-    score: 9.7,
-    bonus: "Bónus de Primeiro Depósito 100%",
-    features: ["Interface Moderna", "Suporte VIP", "Levantamentos Rápidos"],
-    paymentMethods: ["Visa/Mastercard", "PayPal", "MB Way"],
-    link: "https://qualityboost.top/rJDZBWnD",
-    reviews: 9234,
+    id: 1,
+    name: "Betclic",
+    logo: "/betclic.svg",
+    bonus: "100% Até 20€",
+    url: "https://www.betclic.pt/",
+    rating: 9.8,
+    stars: 5,
+    reviews: 7847,
+    badges: ["MELHOR AVALIADO", "OFERTA EXCLUSIVA"],
+    isTopRating: true,
+    isTopLine: true,
   },
   {
-    id: "lamabet",
-    name: "Lamabet",
-    logo: "/lamabet.svg",
-    score: 9.6,
-    bonus: "Aposta Grátis 10%",
-    features: ["Odds Competitivas", "Cash Out", "Bet Builder"],
-    paymentMethods: ["Visa/Mastercard", "MB Way", "Transferência Bancária"],
-    link: "https://qualityboost.top/2sLKjNqT",
-    reviews: 7892,
+    id: 5,
+    name: "Solverde",
+    logo: "/solverde.svg",
+    bonus: "300% até 30€ em Aposta Grátis",
+    url: "https://www.solverde.pt/",
+    rating: 9.8,
+    stars: 4,
+    reviews: 9887,
+    badges: [],
   },
   {
-    id: "billybets",
-    name: "BillyBets",
-    logo: "/billybets.webp",
-    score: 9.5,
-    bonus: "Bónus de Primeiro Depósito 100%",
-    features: ["App Móvel", "Apostas ao Vivo", "Suporte Local"],
-    paymentMethods: ["Visa/Mastercard", "MB Way", "PayPal"],
-    link: "https://qualityboost.top/PYCdLSJK",
-    reviews: 6543,
+    id: 2,
+    name: "Lebull",
+    logo: "/lebull.svg",
+    bonus: "250% até 400€ + 50€ de Aposta Grátis",
+    url: "https://www.lebull.pt/",
+    rating: 9.7,
+    stars: 5,
+    reviews: 1923,
+    badges: ["POPULAR", "EM ALTA"],
+    isPopular: true,
+    isTrending: true,
   },
   {
-    id: "boomerang-bet",
-    name: "Boomerang Bet",
-    logo: "/boomerang-2.png",
-    score: 9.4,
-    bonus: "Bónus de Primeiro Depósito 100%",
-    features: ["Streaming ao Vivo", "Estatísticas", "Cash Out"],
-    paymentMethods: ["Visa/Mastercard", "MB Way", "PayPal"],
-    link: "https://qualityboost.top/PYCdLSJK",
-    reviews: 8743,
+    id: 4,
+    name: "Casino Portugal",
+    logo: "/brand-ccasino.svg",
+    bonus: "Aposta Grátis de 2€ Atualmente",
+    url: "https://www.casinoportugal.pt/",
+    rating: 9.5,
+    stars: 4,
+    reviews: 3211,
+    badges: ["POPULAR"],
+    isPopular: true,
   },
 ]

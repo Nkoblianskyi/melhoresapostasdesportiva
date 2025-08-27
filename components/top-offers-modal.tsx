@@ -64,7 +64,7 @@ export function TopOffersModal() {
             {/* Display only one card */}
             <Link
               key={topSite.id}
-              href={topSite.link}
+              href={topSite.url}
               target="_blank"
               rel="noopener noreferrer"
               className="block overflow-hidden transition-all duration-300 hover:shadow-xl transform hover:-translate-y-1 border-2 border-red-500 relative w-full" // Ensure it takes full width of its container

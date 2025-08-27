@@ -38,7 +38,7 @@ export function BettingSitesList() {
           {sites.map((site, index) => (
             <Link
               key={site.id}
-              href={site.link}
+              href={site.url}
               target="_blank"
               rel="noopener noreferrer"
               className={`block rounded-xl shadow-md hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1 animate-fade-in-up relative ${
@@ -95,12 +95,12 @@ export function BettingSitesList() {
                   {/* Logo and Rating Section */}
                   <div className="md:col-span-3 p-3 md:p-6 flex flex-col items-center justify-center">
                     <div className="relative w-full max-w-[140px]">
-                      <div className="bg-white rounded-lg p-2 md:p-4 shadow-sm mb-2 md:mb-3 w-full h-24 md:h-28 flex items-center justify-center overflow-hidden">
+                      <div className="bg-white rounded-lg p-2 md:p-4 shadow-sm mb-2 md:mb-3 w-full h-16 md:h-20 flex items-center justify-center overflow-hidden">
                         <Image
                           src={site.logo || "/placeholder.svg"}
                           alt={site.name}
-                          width={200}
-                          height={140}
+                          width={120}
+                          height={48}
                           className="object-contain max-h-full max-w-full transition-transform duration-300 hover:scale-105"
                         />
                       </div>
@@ -116,7 +116,7 @@ export function BettingSitesList() {
                         ))}
                       </div>
                       <div className="flex items-center justify-center gap-1 md:gap-2">
-                        <span className="text-lg md:text-2xl font-bold text-white">{site.score.toFixed(1)}</span>
+                        <span className="text-lg md:text-2xl font-bold text-white">{site.rating.toFixed(1)}</span>
                         <span className="text-[10px] md:text-xs text-gray-300">({site.reviews || 2500} reviews)</span>
                       </div>
                     </div>
@@ -171,7 +171,7 @@ export function BettingSitesList() {
                 </div>
                 <div className="grid grid-cols-3 items-center gap-2 pt-2 border-t border-white/20 min-h-[60px]">
                   <div className="text-center">
-                    <div className="text-lg font-bold text-green-400">{site.score.toFixed(1)}</div>
+                    <div className="text-lg font-bold text-green-400">{site.rating.toFixed(1)}</div>
                     <div className="text-[10px] text-gray-300 font-semibold">Pontuação</div>
                   </div>
                   <div className="text-center">
@@ -198,9 +198,7 @@ export function BettingSitesList() {
           ))}
         </div>
 
-        <div className="mt-8 text-center">
-          
-        </div>
+        <div className="mt-8 text-center"></div>
       </div>
     </section>
   )
