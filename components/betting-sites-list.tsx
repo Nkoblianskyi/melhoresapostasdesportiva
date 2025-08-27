@@ -95,7 +95,7 @@ export function BettingSitesList() {
                   {/* Logo and Rating Section */}
                   <div className="md:col-span-3 p-3 md:p-6 flex flex-col items-center justify-center">
                     <div className="relative w-full max-w-[140px]">
-                      <div className="bg-white rounded-lg p-2 md:p-4 shadow-sm mb-2 md:mb-3 w-full h-16 md:h-20 flex items-center justify-center overflow-hidden">
+                      <div className="rounded-lg p-2 md:p-4 shadow-sm mb-2 md:mb-3 w-full h-16 md:h-20 flex items-center justify-center overflow-hidden">
                         <Image
                           src={site.logo || "/placeholder.svg"}
                           alt={site.name}
@@ -154,7 +154,7 @@ export function BettingSitesList() {
               <div className="md:hidden flex flex-col gap-3 p-3">
                 <div className="grid grid-cols-2 items-start gap-2 min-h-[100px]">
                   <div className="flex justify-center items-center h-full">
-                    <div className="bg-white p-2 rounded shadow-sm w-32 h-16 flex items-center justify-center overflow-hidden">
+                    <div className=" p-2 rounded shadow-sm w-32 h-16 flex items-center justify-center overflow-hidden">
                       <Image
                         src={site.logo || "/placeholder.svg"}
                         alt={site.name}
