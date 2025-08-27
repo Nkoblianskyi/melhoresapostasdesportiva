@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import { Menu, X } from "lucide-react"
 import { useState, useEffect } from "react"
 import Image from "next/image"
 
@@ -28,7 +27,9 @@ export function SiteHeader() {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 w-full transition-all duration-300 ${
-        scrolled ? "bg-red-900/95 backdrop-blur-sm shadow-lg" : "bg-red-900"
+        scrolled
+          ? "bg-gradient-to-r from-green-600 to-red-600 backdrop-blur-sm shadow-lg"
+          : "bg-gradient-to-r from-green-600 to-red-600"
       }`}
     >
       <div className="max-w-[1150px] mx-auto flex items-center justify-center h-16 px-4 overflow-hidden">
@@ -37,14 +38,12 @@ export function SiteHeader() {
             <Image src="/favicon.ico" alt="Logo" width={32} height={32} />
           </div>
           <div className="flex flex-col min-w-0">
-            <span className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-green-300 leading-none truncate">
+            <span className="text-xl font-bold text-white transition-colors duration-300 group-hover:text-yellow-300 leading-none truncate">
               MelhoresApostasDesportiva
             </span>
           </div>
         </Link>
-
       </div>
-
     </header>
   )
 }
