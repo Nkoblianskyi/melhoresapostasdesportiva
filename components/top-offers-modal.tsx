@@ -88,7 +88,7 @@ export function TopOffersModal() {
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-3.5 w-3.5 text-yellow-400" fill="currentColor" />
                       ))}
-                      <span className="font-bold text-base text-gray-800 ml-1">{topSite.score.toFixed(1)}</span>
+                      <span className="font-bold text-base text-gray-800 ml-1">{topSite.reviews.toFixed(1)}</span>
                     </div>
                     {/* Welcome Offer Badge */}
                     <Badge variant="outline" className="bg-green-50 text-green-700 mb-2 text-xs">
