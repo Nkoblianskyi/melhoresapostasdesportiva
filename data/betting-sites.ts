@@ -15,32 +15,33 @@ export interface BettingSite {
 }
 
 export const bettingSites: BettingSite[] = [
-  {
+    {
     id: 1,
-    name: "Luckia",
-    logo: "/luckia.svg",
-    bonus: "Aposta Grátis de Atualmente",
-    url: "https://www.luckia.pt/",
-    rating: 9.8,
-    stars: 5,
-    reviews: 9156,
-    badges: ["MELHOR AVALIADO", "OFERTA EXCLUSIVA"],
-    isTopRating: true,
-    isTopLine: true,
-  },
-  {
-    id: 2,
     name: "Solverde",
     logo: "/solverde.svg",
     bonus: "300% até 30€ em Aposta Grátis",
     url: "https://www.solverde.pt/",
-    rating: 9.6,
+    rating: 9.8,
     stars: 5,
     reviews: 5678,
     badges: ["POPULAR", "EM ALTA"],
     isPopular: true,
     isTrending: true,
   },
+  {
+    id: 2,
+    name: "Luckia",
+    logo: "/luckia.svg",
+    bonus: "Aposta Grátis de Atualmente",
+    url: "https://www.luckia.pt/",
+    rating: 9.7,
+    stars: 5,
+    reviews: 9156,
+    badges: ["MELHOR AVALIADO", "OFERTA EXCLUSIVA"],
+    isTopRating: true,
+    isTopLine: true,
+  },
+
   {
     id: 3,
     name: "Casino Portugal",
