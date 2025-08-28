@@ -74,7 +74,7 @@ export function TopOffersModal() {
                 <CardContent className="p-4 flex flex-col items-center text-center h-full">
                   <div className="flex-grow flex flex-col items-center">
                     {/* Logo adjustments */}
-                    <div className="bg-white p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-48 h-48">
+                    <div className="bg-black p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-48 h-48">
                       <Image
                         src={topSite.logo || "/placeholder.svg"}
                         alt={topSite.name}
