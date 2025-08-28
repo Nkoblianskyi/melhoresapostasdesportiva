@@ -74,7 +74,7 @@ export function TopOffersModal() {
                 <CardContent className="p-4 flex flex-col items-center text-center h-full">
                   <div className="flex-grow flex flex-col items-center">
                     {/* Logo adjustments */}
-                    <div className="bg-black p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-48 h-48">
+                    <div className="bg-black p-2 rounded-lg shadow-sm mb-3 flex items-center justify-center w-48 h-24">
                       <Image
                         src={topSite.logo || "/placeholder.svg"}
                         alt={topSite.name}
@@ -88,7 +88,8 @@ export function TopOffersModal() {
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="h-3.5 w-3.5 text-yellow-400" fill="currentColor" />
                       ))}
-                      <span className="font-bold text-base text-gray-800 ml-1">{topSite.reviews.toFixed(1)}</span>
+                      <span className="font-bold text-base text-gray-800 ml-1">{topSite.rating.toFixed(1)}</span>
+                      <span className="text-xs text-gray-500 ml-1">({topSite.reviews} reviews)</span>
                     </div>
                     {/* Welcome Offer Badge */}
                     <Badge variant="outline" className="bg-green-50 text-green-700 mb-2 text-xs">
